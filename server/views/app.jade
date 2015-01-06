@@ -1,0 +1,17 @@
+doctype html
+html(ng-app='genericApp')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+    title Generic Node Angular Project
+    //- Styles
+    link(href='/css/bundle.min.css?v=' + version, rel='stylesheet')
+    //- Scripts
+    script(src='https://code.jquery.com/jquery-2.1.1.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js')
+    script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.js')
+    script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js')
+    script(src='/dist/js/bundle.js?v=' + version)
+  body
+    p hello world from jade templating
+    div(ng-view)
